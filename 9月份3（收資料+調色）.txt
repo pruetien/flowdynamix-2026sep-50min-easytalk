@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【豐身體動能工作室】9月份《身體解密微講座》線上報名</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+        body { font-family: 'Noto Sans TC', sans-serif; }
+        
+        /* 工作室中文名：無外框，直接呈現在頂欄上的圓立體浮雕感（深青藍至深墨綠漸層，無螢光） */
+        .studio-title-3d {
+            font-weight: 900;
+            background: linear-gradient(225deg, #0f4c5c 0%, #115e59 45%, #064e3b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            /* 圓潤浮雕與深度鑲嵌陰影 */
+            filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.9))
+                    drop-shadow(-1px -1px 1px rgba(0, 0, 0, 0.25))
+                    drop-shadow(2px 3px 5px rgba(6, 78, 59, 0.45));
+            letter-spacing: 0.05em;
+        }
+
+        /* 《身體解密微講座》：酒紅混金漸層色調 */
+        .burgundy-gold-text {
+            font-weight: 900;
+            background: linear-gradient(135deg, #fde047 0%, #fbbf24 25%, #be123c 65%, #881337 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
+        }
+
+        /* 玫瑰暖金/質感金字體顏色 */
+        .rose-gold-text {
+            color: #fff7ed;
+            background: linear-gradient(135deg, #fef08a 0%, #fde047 35%, #f59e0b 70%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-amber-50/60 text-slate-800 pb-36 relative min-h-screen">
+
+    <!-- 品牌頂欄 Header (暖橘金漸層) -->
+    <header class="bg-gradient-to-r from-orange-500 via-amber-500 to-amber-600 text-white py-8 px-4 shadow-lg border-b border-amber-300/40">
+        <div class="max-w-2xl mx-auto flex flex-col items-center justify-center text-center space-y-3">
+            <span class="text-xs sm:text-sm font-black tracking-widest uppercase text-white drop-shadow-sm">
+                FLOW DYNAMIX STUDIO
+            </span>
+            <!-- 工作室中文名稱：無外框，圓立體浮雕感深青藍至深墨綠漸層 -->
+            <h1 class="text-2xl sm:text-3xl font-black tracking-tight w-full text-center py-1">
+                <span class="studio-title-3d inline-block">
+                    豐身體動能工作室
+                </span>
+            </h1>
+            <!-- 酒紅混金色調的《身體解密微講座》區塊（無白框） -->
+            <div class="flex flex-wrap items-center justify-center gap-2 pt-1 text-amber-50 text-base sm:text-lg font-bold w-full">
+                <span>9月份</span>
+                <span class="burgundy-gold-text text-xl sm:text-2xl font-black tracking-wide px-1">
+                    《身體解密微講座》
+                </span>
+                <span>線上報名表</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-2xl mx-auto px-4 mt-6">
+
+        <!-- 🔒 報名截止後的感謝鎖定畫面（預設隱藏，時間到自動顯示） -->
+        <div id="expiredContainer" class="hidden bg-white rounded-3xl p-8 sm:p-12 shadow-xl border-2 border-amber-300 text-center space-y-6 my-10">
+            <div class="w-20 h-20 bg-amber-100 text-orange-600 rounded-full flex items-center justify-center mx-auto text-4xl shadow-inner">
+                <i class="fa-solid fa-hourglass-end"></i>
+            </div>
+            <div class="space-y-3">
+                <h2 class="text-2xl sm:text-3xl font-black text-amber-950">本月份講座報名已截止</h2>
+                <p class="text-lg text-slate-700 font-bold leading-relaxed">
+                    感謝您踴躍參與及關注本月份講座活動<br>敬請期待下個月份主題活動！
+                </p>
+            </div>
+            <div class="pt-4 border-t border-amber-100">
+                <a href="https://line.me/R/ti/p/@203jzdgh" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl shadow-md transition text-base">
+                    <i class="fa-brands fa-line text-xl"></i> 加入官方 LINE 關注最新動態
+                </a>
+            </div>
+        </div>
+
+        <!-- 📝 報名表單主要內容（未過期時正常顯示） -->
+        <div id="registrationContent" class="space-y-6">
+            <!-- 📢 醒目提醒區 (柔和暖橘風格) -->
+            <section class="bg-gradient-to-br from-amber-100/80 via-orange-50 to-amber-50 rounded-2xl p-5 sm:p-6 shadow-md border-2 border-amber-300 space-y-3.5">
+                <h2 class="font-black text-xl sm:text-2xl text-amber-950 flex items-center gap-2">
+                    <i class="fa-solid fa-sparkles text-orange-500 text-2xl"></i>
+                    【身體解密・動能解鎖】
+                </h2>
+                <ul class="space-y-2.5 text-base sm:text-lg text-slate-800 font-medium leading-relaxed">
+                    <li class="flex items-start gap-2.5 bg-white p-3 rounded-xl border-2 border-orange-300 shadow-sm">
+                        <span class="bg-orange-500 text-white text-xs px-2.5 py-1 rounded font-black shrink-0 mt-0.5 shadow-sm">活動優惠</span>
+                        <div class="text-amber-950 space-y-0.5">
+                            <strong class="text-orange-600 font-extrabold text-base sm:text-lg block">新竹縣市民優惠福利！！</strong>
+                            <div class="font-bold text-slate-800 text-base">報名任一首場半價優惠 ！（原價 $300 / 場）</div>
+                        </div>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <span class="bg-amber-600 text-white text-xs px-2.5 py-1 rounded font-black shrink-0 shadow-sm">限額</span>
+                        <div class="font-bold text-slate-800">熱門限量！每場次上限 16 人，額滿系統自動關閉。</div>
+                    </li>
+                    <li class="flex items-center gap-2.5">
+                        <span class="bg-amber-600 text-white text-xs px-2.5 py-1 rounded font-black shrink-0 shadow-sm">截止</span>
+                        <div class="font-bold text-slate-800">各場次於開課前 3 天截止報名。</div>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <span class="bg-amber-600 text-white text-xs px-2.5 py-1 rounded font-black shrink-0 shadow-sm mt-0.5">通知</span>
+                        <div class="font-bold text-slate-800 leading-relaxed flex-1">
+                            對帳與課前通知主要透過 <strong class="bg-emerald-600 text-white px-2 py-0.5 rounded-lg text-sm font-extrabold shadow-sm inline-flex items-center gap-1"><i class="fa-brands fa-line"></i>工作室官方LINE帳號 (@203jzdgh)</strong>，輔以 Email 寄送。
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                        <span class="bg-amber-500 text-white text-xs px-2.5 py-1 rounded font-black shrink-0 shadow-sm mt-0.5">歡迎</span>
+                        <div class="font-bold text-slate-800">
+                            <strong class="bg-amber-100 text-amber-900 px-2 py-0.5 rounded border border-amber-300 font-black">零基礎歡迎！</strong> 毋須任何專業經驗或背景，歡迎想了解身體動能、學習保健新知者報名參加。
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 講座基本資訊與匯款卡片 -->
+            <section class="bg-white rounded-2xl p-5 sm:p-6 shadow-sm border border-amber-200 space-y-4">
+                <h2 class="font-bold text-xl text-amber-950 border-b border-amber-100 pb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-circle-info text-orange-500"></i> 講座基本資訊
+                </h2>
+                <div class="grid grid-cols-1 gap-3 text-base text-slate-700 font-medium">
+                    <div class="bg-orange-50/80 p-3 rounded-xl border border-orange-200 text-sm leading-relaxed">
+                        <strong class="text-orange-900 font-black text-base">系列一：徒手自救與動能修復</strong> - 居家徒手，簡易自我解鎖（<strong class="font-bold text-orange-600">每週一 16:00 - 16:50</strong>）
+                    </div>
+                    <div class="bg-amber-100/60 p-3 rounded-xl border border-amber-300/80 text-sm leading-relaxed">
+                        <strong class="text-amber-950 font-black text-base">系列二：神奇彩色貼布與機能支援</strong> - 特殊貼布，延續解鎖卡頓（<strong class="font-bold text-amber-800">每週三 16:00 - 16:50</strong>）
+                    </div>
+                    <div class="flex items-center gap-2 pt-1 text-slate-800 font-bold">
+                        <i class="fa-solid fa-location-dot text-orange-500 w-5 text-lg"></i> 地點：明新科技大學藝文中心二樓
+                    </div>
+                </div>
+
+                <!-- 匯款帳號卡片 -->
+                <div class="bg-white border-2 border-amber-300/90 rounded-2xl p-4 text-slate-800 space-y-2 shadow-sm">
+                    <div class="flex justify-between items-center border-b border-amber-100 pb-2">
+                        <span class="font-extrabold flex items-center gap-1.5 text-base sm:text-lg text-amber-900">
+                            <i class="fa-solid fa-building-columns text-orange-500"></i> 匯款帳戶資訊
+                        </span>
+                        <button type="button" onclick="copyAccount()" class="text-xs sm:text-sm bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 active:scale-95 text-white px-3.5 py-1.5 rounded-lg transition font-black flex items-center gap-1 shadow-sm">
+                            <i class="fa-regular fa-copy"></i> 複製帳號
+                        </button>
+                    </div>
+                    <div class="font-mono text-slate-700 pl-1 space-y-1 text-base sm:text-lg font-medium">
+                        <div>銀行代碼：<span class="font-extrabold text-amber-950">808（玉山銀行）</span></div>
+                        <div>匯款帳號：<span id="accountNum" class="font-black text-orange-600 text-lg sm:text-xl tracking-wider">1126979227092</span></div>
+                        <div>戶名：<span class="font-extrabold text-amber-950">田詠惠</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 表單內容 -->
+            <form id="bookingForm" onsubmit="event.preventDefault(); handleSubmit();" class="space-y-6">
+
+                <!-- 1. 基本資料 -->
+                <section class="bg-white rounded-2xl p-5 sm:p-6 shadow-sm border border-slate-200 space-y-4">
+                    <h2 class="font-bold text-xl text-amber-950 border-b border-amber-100 pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-user-pen text-orange-500"></i> 1. 報名者資料
+                    </h2>
+                    <div>
+                        <label class="block text-base font-bold text-slate-800 mb-1">姓名 <span class="text-orange-500">*</span></label>
+                        <input type="text" id="name" required class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-amber-500 focus:outline-none text-base" placeholder="請填寫真實姓名">
+                    </div>
+                    <div>
+                        <label class="block text-base font-bold text-slate-800 mb-1">LINE 暱稱 / 顯示名稱 <span class="text-orange-500">*</span></label>
+                        <input type="text" id="lineName" required class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-amber-500 focus:outline-none text-base" placeholder="例如：美玲 / 小明">
+                    </div>
+                    <div>
+                        <label class="block text-base font-bold text-slate-800 mb-1">
+                            電子郵件 Email <span class="text-xs font-semibold text-slate-500 ml-1">(選填，若無可留空)</span>
+                        </label>
+                        <input type="email" id="email" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-amber-500 focus:outline-none text-base" placeholder="作為輔助通知使用，無 Email 請留空即可">
+                    </div>
+
+                    <!-- 新竹縣市民身分優惠說明勾選區 -->
+                    <div class="p-3.5 bg-gradient-to-r from-amber-100/80 via-orange-50 to-amber-50 rounded-xl border-2 border-amber-300 space-y-1.5 shadow-sm">
+                        <div class="flex items-center gap-3">
+                            <input type="checkbox" id="isHsinchu" onchange="calculateTotal()" class="w-5 h-5 text-orange-500 rounded focus:ring-amber-500 shrink-0">
+                            <label for="isHsinchu" class="text-base font-extrabold text-amber-950 cursor-pointer">
+                                我是新竹縣市民
+                            </label>
+                        </div>
+                        <div class="pl-8">
+                            <span class="inline-block bg-orange-500 text-white text-xs sm:text-sm px-2.5 py-0.5 rounded font-bold shadow-sm">
+                                報名任一首場半價優惠 ($150／首場)！
+                            </span>
+                            <p class="text-xs font-normal text-amber-900 mt-1">
+                                （提醒說明：活動當日完成現場報到並核對身分證件，符合資格者立即領取優惠折價金）
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 收據開立需求選填區 -->
+                    <div class="pt-2 border-t border-slate-100 mt-3 space-y-3">
+                        <label class="flex items-center gap-3 cursor-pointer">
+                            <input type="checkbox" id="needReceipt" onchange="toggleReceiptFields()" class="w-5 h-5 text-amber-600 rounded shrink-0">
+                            <span class="text-base font-bold text-slate-800">需要開立收據（需報帳或核銷，請勾選並完成資料填寫）</span>
+                        </label>
+                        <div id="receiptFields" class="hidden space-y-3 p-4 bg-slate-50 rounded-xl border border-slate-200">
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-1">收據抬頭（個人姓名或公司行號全稱）</label>
+                                <input type="text" id="receiptTitle" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm" placeholder="例如：豐身體動能工作室 或 王小明">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-slate-700 mb-1">統一編號（若為公司行號核銷請填寫）</label>
+                                <input type="text" id="receiptTaxId" maxlength="8" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm font-mono" placeholder="8碼統編（若無可留空）">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-slate-900 font-extrabold bg-emerald-50 p-3 rounded-xl border border-emerald-300 flex items-center gap-2">
+                        <i class="fa-brands fa-line text-2xl text-emerald-600 shrink-0"></i>
+                        <span>填表後請務必加入工作室官方LINE帳號 (@203jzdgh) 發送姓名核對資料！</span>
+                    </p>
+                </section>
+
+                <!-- 2. 場次選單 -->
+                <section class="bg-white rounded-2xl p-5 sm:p-6 shadow-sm border border-slate-200 space-y-6">
+                    <div class="border-b border-amber-100 pb-2 flex items-center justify-between">
+                        <h2 class="font-bold text-xl text-amber-950 flex items-center gap-2">
+                            <i class="fa-solid fa-calendar-days text-orange-500"></i> 2. 9月份講座場次勾選
+                        </h2>
+                    </div>
+
+                    <!-- 模組一：週一 徒手自救系列 -->
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-4 py-2.5 rounded-xl flex items-center justify-between font-black text-base sm:text-lg shadow-sm border border-orange-300/30">
+                            <span>🌹 系列一《徒手自救與動能修復》</span>
+                            <span class="bg-white text-orange-700 text-xs px-2.5 py-1 rounded-md font-extrabold shadow-sm">每週一 16:00 - 16:50</span>
+                        </div>
+                        <div id="moduleMondayContainer" class="space-y-3 pl-1 sm:pl-2"></div>
+                    </div>
+
+                    <!-- 模組二：週三 神奇貼布系列 -->
+                    <div class="space-y-4 pt-2">
+                        <div class="bg-gradient-to-r from-amber-700 to-amber-800 text-white px-4 py-2.5 rounded-xl flex items-center justify-between font-black text-base sm:text-lg shadow-sm border border-amber-400/30">
+                            <span>✨ 系列二《神奇彩色貼布與機能支援》</span>
+                            <span class="bg-white text-amber-900 text-xs px-2.5 py-1 rounded-md font-extrabold shadow-sm">每週三 16:00 - 16:50</span>
+                        </div>
+                        <div id="moduleWednesdayContainer" class="space-y-3 pl-1 sm:pl-2"></div>
+                    </div>
+                </section>
+
+                <!-- 3. 匯款對帳資訊 -->
+                <section class="bg-white rounded-2xl p-5 sm:p-6 shadow-sm border border-slate-200 space-y-5">
+                    <h2 class="font-bold text-xl text-amber-950 border-b border-amber-100 pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-receipt text-orange-500"></i> 3. 匯款對帳資訊
+                    </h2>
+                    
+                    <div class="bg-amber-50/80 border border-amber-200 p-4 rounded-xl space-y-2.5 shadow-sm">
+                        <p class="text-amber-950 font-black text-base flex items-center gap-2">
+                            <i class="fa-solid fa-circle-info text-orange-500 text-xl"></i> 對帳填寫說明：
+                        </p>
+                        <p class="text-sm text-slate-800 font-bold leading-relaxed">
+                            請填寫您實際轉帳之金額與帳號後五碼（轉帳總金額核對如右下角系統自動計算之金額）。
+                        </p>
+                        <p class="text-sm text-slate-800 font-bold leading-relaxed">
+                            請截圖或拍下繳費憑證照片，連同報名完成資訊，一併傳送至官方line，以核對帳目資料。
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 bg-amber-50/40 p-4 rounded-xl border border-amber-100">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-1">實際匯款金額 <span class="text-orange-500">*</span></label>
+                            <input type="text" id="actualAmount" required class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm font-bold text-amber-950" placeholder="例如：300 或 600">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-1">匯款帳號後五碼 <span class="text-orange-500">*</span></label>
+                            <input type="text" id="bankLast5" required maxlength="5" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:outline-none text-sm font-mono tracking-widest" placeholder="請填寫 5 碼數字">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 4. 條款與免責確認 -->
+                <section class="bg-white rounded-2xl p-5 sm:p-6 shadow-sm border border-slate-200 space-y-4">
+                    <h2 class="font-bold text-xl text-amber-950 border-b border-amber-100 pb-2 flex items-center gap-2">
+                        <i class="fa-solid fa-file-contract text-orange-500"></i> 4. 報名條款與免責聲明確認
+                    </h2>
+
+                    <div class="space-y-3.5 text-base text-slate-800 leading-relaxed font-medium">
+                        <label class="flex items-start gap-3 cursor-pointer p-3.5 rounded-xl bg-gradient-to-r from-amber-100/80 to-orange-50 border-2 border-amber-300 shadow-sm">
+                            <input type="checkbox" required class="mt-1 w-5 h-5 text-orange-500 rounded shrink-0">
+                            <span class="text-slate-900">
+                                <strong class="bg-orange-500 text-white px-2.5 py-1 rounded text-base inline-block mb-1.5 shadow-sm font-black">【⚠️ 重要退費與轉讓說明】</strong><br>
+                                請於報名送出前再次確認自身可以參加的活動時間；若臨時不便，非常歡迎將名額轉讓給親友代為出席，並於課程開始前（至少提前一天）利用官方LINE告知主辦單位。
+                            </span>
+                        </label>
+
+                        <label class="flex items-start gap-3 cursor-pointer p-2.5 rounded-lg hover:bg-amber-50/40">
+                            <input type="checkbox" required class="mt-1 w-5 h-5 text-orange-500 rounded shrink-0">
+                            <span><strong>【肌貼實作備品】</strong>上肌貼課程必須有貼布（可自備、與同伴共用或<strong class="text-amber-900 font-bold bg-amber-100 px-1 rounded">現場享學員優惠價加購貼布</strong>），並請自備剪刀。</span>
+                        </label>
+
+                        <label class="flex items-start gap-3 cursor-pointer p-2.5 rounded-lg hover:bg-amber-50/40">
+                            <input type="checkbox" required class="mt-1 w-5 h-5 text-orange-500 rounded shrink-0">
+                            <span><strong>【穿著建議】</strong>為方便身體活動實作與貼附，請務必穿著或攜帶舒適的<strong>運動服裝/衣褲</strong>出席。</span>
+                        </label>
+
+                        <label class="flex items-start gap-3 cursor-pointer p-3.5 bg-amber-50/90 border-2 border-amber-300 rounded-xl shadow-sm hover:bg-amber-100/60 transition">
+                            <input type="checkbox" required class="mt-1 w-5 h-5 text-amber-600 rounded shrink-0">
+                            <span class="text-amber-950 text-sm sm:text-base leading-relaxed">
+                                <strong class="text-amber-900 font-extrabold flex items-center gap-1.5 text-base mb-1">
+                                    <i class="fa-solid fa-triangle-exclamation text-amber-600 text-lg"></i>
+                                    【健康安全與醫療免責聲明】
+                                </strong>
+                                本微講座旨在提供健康教育、運動保健與肌貼防護概念推廣，內容不包含任何醫療行為。若您目前正處於身體急性發炎期、嚴重傷病或剛接受手術者，建議於報名前諮詢專業醫師意見。
+                            </span>
+                        </label>
+                    </div>
+                </section>
+
+                <!-- 送出按鈕 -->
+                <button type="submit" id="submitBtn" class="w-full bg-gradient-to-r from-orange-500 via-amber-500 to-amber-600 hover:from-orange-600 hover:to-amber-700 active:scale-[0.99] text-white font-extrabold py-4 px-4 rounded-xl shadow-xl transition duration-150 flex items-center justify-center gap-2 text-lg sm:text-xl border border-amber-300/30">
+                    <i class="fa-solid fa-paper-plane text-xl sm:text-2xl"></i> 確認資料並送出報名
+                </button>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- 固定底部計價列 -->
+    <div id="bottomBar" class="fixed bottom-0 inset-x-0 bg-gradient-to-r from-amber-950 via-amber-900 to-orange-950 backdrop-blur-md text-white p-4 shadow-2xl border-t border-amber-400/30 z-50">
+        <div class="max-w-2xl mx-auto flex items-center justify-between">
+            <div>
+                <div class="text-xs text-amber-200">已選擇 <span id="courseCount" class="text-amber-300 font-extrabold text-sm">0</span> 場講座</div>
+                <div class="text-xs text-amber-200/80">$300 / 場</div>
+            </div>
+            <div class="text-right">
+                <span class="text-xs text-amber-200 font-bold">應匯總額</span>
+                <div class="text-2xl sm:text-3xl font-black text-amber-300">NT$ <span id="totalPrice">0</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast 訊息 Container -->
+    <div id="toastContainer" class="fixed top-5 right-5 z-[120] space-y-2 pointer-events-none max-w-sm w-full px-4"></div>
+
+    <!-- 🌟 成功彈出視窗 🌟 -->
+    <div id="successModal" class="fixed inset-0 bg-slate-900/90 backdrop-blur-sm hidden flex-col items-center justify-center p-4 z-[100]">
+        <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl space-y-4 text-center max-h-[90vh] overflow-y-auto relative border border-amber-200">
+            <div class="w-16 h-16 bg-amber-100 text-orange-500 rounded-full flex items-center justify-center mx-auto text-3xl">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-2xl font-black text-amber-950 tracking-tight">報名資料已成功送出！</h3>
+            
+            <div class="bg-amber-50 p-3 rounded-xl border-2 border-amber-300 animate-pulse">
+                <p class="text-base text-amber-900 font-black flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-camera text-xl"></i> 提醒您：請務必先「截圖此畫面」留存！
+                </p>
+            </div>
+
+            <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-left space-y-2">
+                <p class="font-bold text-amber-950 border-b pb-1.5"><i class="fa-solid fa-list-check"></i> 您的已選場次明細：</p>
+                <ul id="modalCourseList" class="text-sm text-slate-700 space-y-1.5 list-disc pl-5 marker:text-orange-500 font-medium"></ul>
+            </div>
+            
+            <div class="pt-2">
+                <a href="https://line.me/R/ti/p/@203jzdgh" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-700 active:scale-[0.99] text-white font-extrabold py-4 px-4 rounded-xl shadow-xl transition duration-150 flex items-center justify-center gap-3 text-lg no-underline">
+                    <i class="fa-brands fa-line text-3xl"></i> 立即前往官方 LINE 傳送憑證
+                </a>
+                <p class="text-xs text-slate-500 mt-2">（訂單明細已自動複製，可直接貼上備份）</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 腳本邏輯 -->
+    <script>
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxFg_IPCBVaLOk4_kDOL_tswy9qyGWAzkH_vVRqVgZrpVLOWE1j6_2MUbsLU8ryTugnbg/exec";
+
+        const mondayCourses = [
+            { id: "m1", unitTag: "『單元1』", date: "09/07 (一)", time: "16:00 - 16:50", module: "🌹 徒手自救與動能修復系列", topic: "日常下背痛：解開腰部痛點與久坐搬重勞損", type: "m", cluster: "【聚落 B - Back】", maxQuota: 16, currentCount: 0, deadline: "2026-09-04T23:59:59" },
+            { id: "m2", unitTag: "『單元2』", date: "09/14 (一)", time: "16:00 - 16:50", module: "🌹 徒手自救與動能修復系列", topic: "網球肘與前臂過勞：甩鍋打掃手肘疼痛舒緩", type: "m", cluster: "【聚落 C - Elbow】", maxQuota: 16, currentCount: 0, deadline: "2026-09-11T23:59:59" },
+            { id: "m3", unitTag: "『單元3』", date: "09/21 (一)", time: "16:00 - 16:50", module: "🌹 徒手自救與動能修復系列", topic: "告別『舉手維艱』的五十肩解鎖術", type: "m", cluster: "【聚落 A - Shoulder】", maxQuota: 16, currentCount: 0, deadline: "2026-09-18T23:59:59" }
+        ];
+
+        const wednesdayCourses = [
+            { id: "w1", unitTag: "『單元1』", date: "09/09 (三)", time: "16:00 - 16:50", module: "✨ 神奇彩色貼布與機能支援系列", topic: "日常下背痛彩色防線：腰部減壓機能貼紮", type: "w", cluster: "【聚落 B - Back】", maxQuota: 16, currentCount: 0, deadline: "2026-09-06T23:59:59" },
+            { id: "w2", unitTag: "『單元2』", date: "09/16 (三)", time: "16:00 - 16:50", module: "✨ 神奇彩色貼布與機能支援系列", topic: "網球肘防護應援：手肘及前臂肌群舒緩貼法", type: "w", cluster: "【聚落 C - Elbow】", maxQuota: 16, currentCount: 0, deadline: "2026-09-13T23:59:59" },
+            { id: "w3", unitTag: "『單元3』", date: "09/23 (三)", time: "16:00 - 16:50", module: "✨ 神奇彩色貼布與機能支援系列", topic: "五十肩與肩關節減壓貼紮應援", type: "w", cluster: "【聚落 A - Shoulder】", maxQuota: 16, currentCount: 0, deadline: "2026-09-20T23:59:59" }
+        ];
+
+        // 檢查是否所有場次都已過報名截止時間
+        function checkGlobalDeadline() {
+            const now = new Date();
+            const allCourses = [...mondayCourses, ...wednesdayCourses];
+            const allExpired = allCourses.every(c => now > new Date(c.deadline));
+
+            if (allExpired) {
+                document.getElementById('registrationContent').classList.add('hidden');
+                document.getElementById('bottomBar').classList.add('hidden');
+                document.getElementById('expiredContainer').classList.remove('hidden');
+            }
+        }
+
+        function showToast(message, type = 'info') {
+            const container = document.getElementById('toastContainer');
+            const toast = document.createElement('div');
+            
+            const bgColor = type === 'error' ? 'bg-amber-800' : (type === 'success' ? 'bg-emerald-700' : 'bg-amber-900');
+            const icon = type === 'error' ? 'fa-circle-exclamation' : (type === 'success' ? 'fa-circle-check' : 'fa-circle-info');
+
+            toast.className = `${bgColor} text-white px-4 py-3 rounded-xl shadow-2xl flex items-center gap-3 border border-white/20 transform transition-all duration-300 translate-y-[-10px] opacity-0 pointer-events-auto`;
+            toast.innerHTML = `<i class="fa-solid ${icon} text-xl"></i> <span class="font-bold text-sm flex-1">${message}</span>`;
+            
+            container.appendChild(toast);
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-[-10px]', 'opacity-0');
+            }, 10);
+
+            setTimeout(() => {
+                toast.classList.add('opacity-0', 'translate-y-[-10px]');
+                setTimeout(() => toast.remove(), 300);
+            }, 3500);
+        }
+
+        function toggleReceiptFields() {
+            const isChecked = document.getElementById('needReceipt').checked;
+            const fields = document.getElementById('receiptFields');
+            if (isChecked) {
+                fields.classList.remove('hidden');
+            } else {
+                fields.classList.add('hidden');
+                document.getElementById('receiptTitle').value = '';
+                document.getElementById('receiptTaxId').value = '';
+            }
+        }
+
+        function renderCourses() {
+            document.getElementById('moduleMondayContainer').innerHTML = mondayCourses.map(c => {
+                const now = new Date();
+                const deadlineDate = new Date(c.deadline);
+                const isDisabled = now > deadlineDate || c.currentCount >= c.maxQuota;
+                const deadlineFormatted = `${deadlineDate.getMonth() + 1}/${deadlineDate.getDate()} (${["日","一","二","三","四","五","六"][deadlineDate.getDay()]}) ${String(deadlineDate.getHours()).padStart(2,'0')}:${String(deadlineDate.getMinutes()).padStart(2,'0')} 截止`;
+
+                return `
+                    <label class="flex items-start gap-3 p-3.5 rounded-xl border transition ${isDisabled ? 'bg-slate-100 border-slate-200 opacity-60 cursor-not-allowed' : 'bg-white border-slate-200 hover:border-orange-400 hover:bg-orange-50/20 cursor-pointer'}">
+                        <input type="checkbox" name="course" value="${c.date} (${c.time}) ${c.unitTag} ${c.topic}" data-type="${c.type}" onchange="calculateTotal()" ${isDisabled ? 'disabled' : ''} class="mt-1 w-5 h-5 text-orange-500 rounded">
+                        <div class="space-y-1.5 flex-1">
+                            <div class="flex items-center justify-between gap-2 flex-wrap">
+                                <div class="text-sm font-semibold text-slate-700">${c.date} (${c.time})</div>
+                                <span class="bg-orange-100 text-orange-800 text-xs font-bold px-2 py-0.5 rounded border border-orange-200">${isDisabled ? '已截止/額滿' : '開放報名中'}</span>
+                            </div>
+                            <p class="text-base text-slate-900 leading-relaxed font-bold">
+                                <span class="text-orange-600 font-black">${c.unitTag}</span> ${c.topic} <span class="text-slate-400 font-normal text-xs">${c.cluster}</span>
+                            </p>
+                            <div class="text-xs text-orange-600 font-normal">報名期限：${deadlineFormatted}</div>
+                        </div>
+                    </label>
+                `;
+            }).join('');
+
+            document.getElementById('moduleWednesdayContainer').innerHTML = wednesdayCourses.map(c => {
+                const now = new Date();
+                const deadlineDate = new Date(c.deadline);
+                const isDisabled = now > deadlineDate || c.currentCount >= c.maxQuota;
+                const deadlineFormatted = `${deadlineDate.getMonth() + 1}/${deadlineDate.getDate()} (${["日","一","二","三","四","五","六"][deadlineDate.getDay()]}) ${String(deadlineDate.getHours()).padStart(2,'0')}:${String(deadlineDate.getMinutes()).padStart(2,'0')} 截止`;
+
+                return `
+                    <label class="flex items-start gap-3 p-3.5 rounded-xl border transition ${isDisabled ? 'bg-slate-100 border-slate-200 opacity-60 cursor-not-allowed' : 'bg-white border-slate-200 hover:border-amber-500 hover:bg-amber-50/20 cursor-pointer'}">
+                        <input type="checkbox" name="course" value="${c.date} (${c.time}) ${c.unitTag} ${c.topic}" data-type="${c.type}" onchange="calculateTotal()" ${isDisabled ? 'disabled' : ''} class="mt-1 w-5 h-5 text-amber-700 rounded">
+                        <div class="space-y-1.5 flex-1">
+                            <div class="flex items-center justify-between gap-2 flex-wrap">
+                                <div class="text-sm font-semibold text-slate-700">${c.date} (${c.time})</div>
+                                <span class="bg-amber-100 text-amber-900 text-xs font-bold px-2 py-0.5 rounded border border-amber-300">${isDisabled ? '已截止/額滿' : '開放報名中'}</span>
+                            </div>
+                            <p class="text-base text-slate-900 leading-relaxed font-bold">
+                                <span class="text-amber-800 font-black">${c.unitTag}</span> ${c.topic} <span class="text-slate-400 font-normal text-xs">${c.cluster}</span>
+                            </p>
+                            <div class="text-xs text-amber-700 font-normal">報名期限：${deadlineFormatted}</div>
+                        </div>
+                    </label>
+                `;
+            }).join('');
+        }
+
+        function calculateTotal() {
+            const selected = document.querySelectorAll('input[name="course"]:checked');
+            const count = selected.length;
+            const total = count * 300;
+
+            document.getElementById('courseCount').innerText = count;
+            document.getElementById('totalPrice').innerText = total;
+        }
+
+        function copyAccount() {
+            const accountText = "玉山銀行 (808) 帳號：1126979227092 戶名：田詠惠";
+            copyToClipboard(accountText);
+            showToast('已複製匯款帳號資訊！', 'success');
+        }
+
+        function copyToClipboard(text) {
+            const tempInput = document.createElement('textarea');
+            tempInput.value = text;
+            tempInput.style.position = 'fixed';
+            tempInput.style.opacity = '0';
+            document.body.appendChild(tempInput);
+            tempInput.focus();
+            tempInput.select();
+            try {
+                document.execCommand('copy');
+            } catch (err) {
+                console.error('Copy failed', err);
+            }
+            document.body.removeChild(tempInput);
+        }
+
+        function handleSubmit() {
+            const selectedCourses = Array.from(document.querySelectorAll('input[name="course"]:checked')).map(el => el.value);
+
+            if (selectedCourses.length === 0) {
+                showToast('請至少勾選一場欲報名的講座場次！', 'error');
+                return;
+            }
+
+            const name = document.getElementById('name').value.trim();
+            const lineName = document.getElementById('lineName').value.trim();
+            const actualAmount = document.getElementById('actualAmount').value.trim();
+            const bankLast5 = document.getElementById('bankLast5').value.trim();
+
+            if (!name || !lineName || !actualAmount || !bankLast5) {
+                showToast('請填寫所有必填欄位 (*)', 'error');
+                return;
+            }
+
+            const needReceipt = document.getElementById('needReceipt').checked;
+            const receiptTitle = document.getElementById('receiptTitle').value.trim();
+            const receiptTaxId = document.getElementById('receiptTaxId').value.trim();
+
+            let receiptInfo = "不需開立收據";
+            if (needReceipt) {
+                receiptInfo = `需要收據 (抬頭: ${receiptTitle || '無'}${receiptTaxId ? ' / 統編: ' + receiptTaxId : ''})`;
+            }
+
+            const isHsinchu = document.getElementById('isHsinchu').checked ? "是（現場報到領取首場半價 $150 優惠金）" : "否";
+
+            const summaryText = `【9月FLOW微講座報名核對】\n姓名：${name}\nLINE 暱稱：${lineName}\n新竹縣市民：${isHsinchu}\n收據需求：${receiptInfo}\n----------------\n報名場次：\n- ${selectedCourses.join('\n- ')}\n----------------\n系統試算總額：NT$ ${document.getElementById('totalPrice').innerText}\n實際填寫匯款：NT$ ${actualAmount}\n匯款後五碼：${bankLast5}\n（請檢附繳費憑證照片，以核對帳目資料）`;
+
+            copyToClipboard(summaryText);
+
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-xl sm:text-2xl"></i> 資料傳送中...';
+
+            const payload = {
+                name: name,
+                email: document.getElementById('email').value.trim() || '未提供',
+                lineName: lineName,
+                isHsinchu: isHsinchu,
+                receiptInfo: receiptInfo,
+                courses: selectedCourses.join(' / '),
+                totalPrice: document.getElementById('totalPrice').innerText,
+                actualAmount: actualAmount,
+                bankLast5: bankLast5
+            };
+
+            fetch(SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            }).then(() => {
+                document.getElementById('modalCourseList').innerHTML = selectedCourses.map(c => `<li>${c}</li>`).join('');
+
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane text-xl sm:text-2xl"></i> 確認資料並送出報名';
+
+                const modal = document.getElementById('successModal');
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }).catch(error => {
+                showToast('發送發生錯誤，請截圖畫面並直接聯繫官方 LINE！', 'error');
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane text-xl sm:text-2xl"></i> 確認資料並送出報名';
+            });
+        }
+
+        window.onload = function() {
+            checkGlobalDeadline();
+            renderCourses();
+        };
+    </script>
+</body>
+</html>
