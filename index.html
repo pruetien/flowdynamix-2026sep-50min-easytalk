@@ -61,27 +61,38 @@
                 <span class="burgundy-gold-text text-xl sm:text-2xl font-black tracking-wide px-1">
                     《身體解密微講座》
                 </span>
-                <span>線上報名表</span>
+                <span id="headerStatusText">線上報名表</span>
             </div>
         </div>
     </header>
 
     <main class="max-w-2xl mx-auto px-4 mt-6">
 
-        <!-- 🔒 報名截止後的感謝鎖定畫面（預設隱藏，時間到自動顯示） -->
-        <div id="expiredContainer" class="hidden bg-white rounded-3xl p-8 sm:p-12 shadow-xl border-2 border-amber-300 text-center space-y-6 my-10">
-            <div class="w-20 h-20 bg-amber-100 text-orange-600 rounded-full flex items-center justify-center mx-auto text-4xl shadow-inner">
-                <i class="fa-solid fa-hourglass-end"></i>
+        <!-- 🔒 報名截止後的感謝鎖定畫面（比照 8 月份精緻視覺卡片設計） -->
+        <div id="expiredContainer" class="hidden bg-white rounded-3xl max-w-lg mx-auto p-6 sm:p-8 shadow-xl border border-slate-100 text-center space-y-6 my-8">
+            <div class="w-20 h-20 bg-emerald-100/80 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-4xl shadow-sm">
+                <i class="fa-solid fa-seedling"></i>
             </div>
-            <div class="space-y-3">
-                <h2 class="text-2xl sm:text-3xl font-black text-amber-950">本月份講座報名已截止</h2>
-                <p class="text-lg text-slate-700 font-bold leading-relaxed">
-                    感謝您踴躍參與及關注本月份講座活動<br>敬請期待下個月份主題活動！
+            
+            <div class="space-y-2">
+                <h2 class="text-2xl sm:text-3xl font-black text-slate-800 tracking-tight">9月份講座已圓滿結業！</h2>
+                <p class="text-base sm:text-lg text-slate-600 font-bold leading-relaxed pt-1">
+                    非常感謝大家本月的熱情參與與支持！<br>
+                    目前本月份報名表單已關閉。
                 </p>
             </div>
-            <div class="pt-4 border-t border-amber-100">
-                <a href="https://line.me/R/ti/p/@203jzdgh" target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl shadow-md transition text-base">
-                    <i class="fa-brands fa-line text-xl"></i> 加入官方 LINE 關注最新動態
+
+            <!-- 溫馨引導框 -->
+            <div class="bg-slate-50/80 p-5 rounded-2xl border border-slate-200/80 text-center space-y-2 text-sm sm:text-base text-slate-700 font-medium leading-relaxed">
+                <p>我們正在緊鑼密鼓準備接下來的精彩課程！</p>
+                <p>想第一時間掌握未來的活動資訊與保健新知？</p>
+                <p class="font-extrabold text-emerald-700 pt-1">歡迎加入我們的官方 LINE 持續關注我們喔！</p>
+            </div>
+
+            <!-- 前往官方 LINE 按鈕 -->
+            <div>
+                <a href="https://line.me/R/ti/p/@203jzdgh" target="_blank" class="w-full bg-emerald-700 hover:bg-emerald-800 active:scale-[0.99] text-white font-extrabold py-4 px-4 rounded-xl shadow-lg transition duration-150 flex items-center justify-center gap-2.5 text-lg sm:text-xl no-underline">
+                    <i class="fa-brands fa-line text-2xl"></i> 前往工作室官方 LINE
                 </a>
             </div>
         </div>
@@ -400,6 +411,7 @@
                 document.getElementById('registrationContent').classList.add('hidden');
                 document.getElementById('bottomBar').classList.add('hidden');
                 document.getElementById('expiredContainer').classList.remove('hidden');
+                document.getElementById('headerStatusText').innerText = "已圓滿結業";
             }
         }
 
